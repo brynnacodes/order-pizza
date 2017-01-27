@@ -8,10 +8,18 @@ function Pizza (toppings, size) {
 };
 
 Pizza.prototype.pizzaPrice = function () {
-  var cost = 10;
+  var cost = 0;
 
   for (i = 1; i <= toppings.length; i++) {
-    cost +=1;
+    cost += 1;
+  }
+
+  if (this.size === "small") {
+    cost += 10;
+  } else if (this.size === "medium") {
+    cost += 12;
+  } else if (this.size === "large") {
+    cost += 14;
   }
   return cost;
 };
@@ -22,20 +30,17 @@ $(document).ready(function() {
   $("#pizza-form").submit(function(event) {
     event.preventDefault();
 
+    var size = $("select#pizza-size").val();
+    console.log(size);
+
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
 
-    console.log(toppings);
-
-    size = $("select#pizza-size").val();
-
-      var newPizza = new Pizza(toppings, size);
-      var cost = 10;
-      var pizzaTotal = newPizza.pizzaPrice();
+    var newPizza = new Pizza(toppings, size);
+    var pizzaTotal = newPizza.pizzaPrice();
 
     $("#pizza-order").append("<p> Your order: " + size + " " + toppings + ", " + "price:" + " " + "$" + pizzaTotal + "</p>");
-
 
   });
 });
