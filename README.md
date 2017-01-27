@@ -48,11 +48,11 @@ _{Tell me about the languages and tools you used to create this app. Assume that
   * Example input: user selects toppings and size
   * Example output: price = $(x-amount)
 
-* The program will will return a receipt with the cost, size, and toppings of a user's       pizza
+* The program will will return a receipt with the cost, size, and toppings of a user's pizza
   * Example input: user selects toppings and size
   * Example output: program returns a receipt with the cost, size, and toppings of the user's pizza
 
-* The program will
+* The program will allow users to input a delivery address, which will appear on their receipt
   * Example input:
   * Example output:
 

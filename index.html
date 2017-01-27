@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Cormorant+Unicase" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -20,17 +21,21 @@
     <div id="pizza-container" class="container">
       <form id="pizza-form">
           <h3>Order form:</h3>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-6">
           <h5 class="order-header">Choose one or more toppings ($1 each):<h5>
-          <input type="checkbox" name="pizza-toppings" value="burratta"><span class="pizza-input"> Burratta</span><br>
-          <input type="checkbox" name="pizza-toppings" value="mozzarella"><span class="pizza-input"> Mozzarella</span><br>
-          <input type="checkbox" name="pizza-toppings" value="basil"><span class="pizza-input"> Basil</span><br>
-          <input type="checkbox" name="pizza-toppings" value="sausage"><span class="pizza-input"> Sausage</span><br>
-          <input type="checkbox" name="pizza-toppings" value="kale"><span class="pizza-input"> Kale</span><br>
-          <input type="checkbox" name="pizza-toppings" value="olives"><span class="pizza-input"> Olives</span><br>
+          <div class="col-md-6 col-lg-6">
+            <input type="checkbox" name="pizza-toppings" value="burratta"><span class="pizza-input"> Burratta</span><br>
+            <input type="checkbox" name="pizza-toppings" value="mozzarella"><span class="pizza-input"> Mozzarella</span><br>
+            <input type="checkbox" name="pizza-toppings" value="basil"><span class="pizza-input"> Basil</span>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <input type="checkbox" name="pizza-toppings" value="sausage"><span class="pizza-input"> Sausage</span><br>
+            <input type="checkbox" name="pizza-toppings" value="kale"><span class="pizza-input"> Kale</span><br>
+            <input type="checkbox" name="pizza-toppings" value="olives"><span class="pizza-input"> Olives</span><br>
+          </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-6">
           <h5 class="order-header">Choose a size: </h5>
           <select id="pizza-size" class="form-control">
             <option value="small">Small: 10"</option>
@@ -39,11 +44,28 @@
           </select>
         </div>
 
-        <button id="pizza-submit" class="btn" type="submit">Place order!</button>
+        <div class="col-md-12 col-lg-12">
+          <h3>Delivery address:</h3>
+          <div class="delivery col-md-6 col-lg-6">
+            <label for="name">Your name</label>
+            <input id="name" type="text"><br>
+            <label for="street">Street</label>
+            <input id="street" type="text">
+          </div>
+          <div class="delivery col-md-6 col-lg-6">
+            <label for="city">City</label>
+            <input id="city" type="text"><br>
+            <label for="zip">ZIP</label>
+            <input id="zip" type="text">
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <button id="pizza-submit" class="btn" type="submit">Place order!</button>
+          </div>
+        </div>
       </form>
     </div>
 
-    <div class="col-md-12">
+    <div class="col-md-12 col-lg-12">
       <div id="pizza-order">
         <h3>Order receipt</h3>
 

@@ -16,9 +16,6 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  /*margin-left: 15%;
-  margin-right: 15%
-  margin-bottom: 3%;*/
 }
 
 #title-header h1 {
@@ -40,19 +37,19 @@ body {
   margin-bottom: 22px;
 }
 
-.order-header {
-  font-size: 16px;
-}
-
 .pizza-input {
   font-size: 14px;
+}
+
+.delivery {
+  padding-left: 14%;
 }
 
 #pizza-submit {
   background-color: #A04E46;
   color:#DFE3E4;
   margin-top: 5%;
-  margin-left: 2%;
+  /*margin-left: 45%;*/
 }
 
 #pizza-order {
@@ -67,6 +64,9 @@ body {
   margin-top: 3%;
 }
 
+.order-header {
+  font-size: 16px;
+}
 
 #pizza-order p {
   font-size: 16px;

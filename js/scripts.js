@@ -29,12 +29,18 @@ Pizza.prototype.pizzaPrice = function () {
 $(document).ready(function() {
   $("#pizza-form").submit(function(event) {
     event.preventDefault();
+    var toppingsString;
+    var userName = $("#name").val();
+    var userStreet = $("#street").val();
+    var userCity = $("#city").val();
+    var userZip = $("#zip").val();
 
     var size = $("select#pizza-size").val();
-    console.log(size);
 
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       toppings.push($(this).val());
+      console.log(toppings);
+      toppingsString = toppings.join(", ");
     });
 
     var newPizza = new Pizza(toppings, size);
@@ -42,7 +48,7 @@ $(document).ready(function() {
 
     $("#pizza-container").hide();
 
-    $("#pizza-order").show().append("<p>Size: " + size + "<br>" + "Toppings: " + toppings + "<br>" + "Price:" + " " + "$" + pizzaTotal + "<br>Thank you for your order!</p>");
+    $("#pizza-order").show().append("<p class='receipt'>Size: " + size + "<br>" + "Toppings: " + toppingsString + "<br>" + "Price:" + " " + "$" + pizzaTotal + "<br>Thank you for your order!</p><br><p class='receipt'>Delivery name:" + " " + userName + "<br>" + "Delivery address: " + userStreet + " " + userCity + " " + userZip + "</p>");
 
   });
 });
