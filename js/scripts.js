@@ -13,9 +13,11 @@ $(document).ready(function() {
 
     $("input:checkbox[name=pizza-toppings]:checked").each(function(){
       var pizzaToppings = $(this).val();
-      $("#pizza-order").append("<p>" + pizzaToppings + "</p>");
+
+    var pizzaSize = $("select#pizza-size").val();
+
+    $("#pizza-order").append("<p> Your order: " + pizzaSize + " " + pizzaToppings + " pizza</p>");
+
     });
-
-
   });
 });
