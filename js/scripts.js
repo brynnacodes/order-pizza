@@ -40,7 +40,9 @@ $(document).ready(function() {
     var newPizza = new Pizza(toppings, size);
     var pizzaTotal = newPizza.pizzaPrice();
 
-    $("#pizza-order").append("<p> Your order: " + size + " " + toppings + ", " + "price:" + " " + "$" + pizzaTotal + "</p>");
+    $("#pizza-form").hide();
+
+    $("#pizza-order").show().append("<p> Your order<br>" + "Size: " + size + "<br>" + "Toppings: " + toppings + "<br>" + "Price:" + " " + "$" + pizzaTotal + "</p>");
 
   });
 });
