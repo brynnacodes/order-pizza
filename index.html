@@ -21,16 +21,15 @@
           <h3>Order form:</h3>
         </div>
 
-        <form id="pizza-form">
           <div class="col-md-4">
-            <select id="pizza-toppings">
-              <option value="cheese">Cheese</option>
-              <option value="pepperoni">Pepperoni</option>
-              <option value="margherita">Margherita</option>
-            </select>
-          </div>
+            <form id="pizza-form">
+              <input type="checkbox" name="pizza-toppings" value="cheese">Cheese<br>
+              <input type="checkbox" name="pizza-toppings" value="pepperoni">Pepperoni<br>
+              <input type="checkbox" name="pizza-toppings" value="margherita">Margherita<br>
 
-<!-- select for pizza size and quantity -->
+              <button id="pizza-submit" class="btn btn-sm btn-primary" type="submit">Place order!</button>
+            </form>
+          </div>
 
           <!-- <div class="col-md-4">
             <select id="pizza-size" class="form-control">
@@ -47,8 +46,6 @@
               <option value=""></option>
           </div> -->
 
-          <button id="pizza-submit" class="btn btn-sm btn-primary" type="submit">Place order!</button>
-        </form>
 
         <div id="pizza-order">
         </div>

@@ -11,9 +11,11 @@ $(document).ready(function() {
   $("#pizza-form").submit(function(event) {
     event.preventDefault();
 
-    var pizzaToppings = $("select#pizza-toppings").val();
+    $("input:checkbox[name=pizza-toppings]:checked").each(function(){
+      var pizzaToppings = $(this).val();
+      $("#pizza-order").append("<p>" + pizzaToppings + "</p>");
+    });
 
 
-    $("#pizza-order").append("<p>" + pizzaToppings + "</p>");
   });
 });
