@@ -1,18 +1,21 @@
 
 body {
   background-image: url(../img/background.jpg);
-  font-family: 'Open Sans', serif;
+  font-family: 'Comfortaa', cursive;
   background-repeat: no-repeat;
+  background-size: 100vw;
 
 }
 
 #title-header {
+  border-radius: 5px;
   text-align: center;
   background-color: #A04E46;
   color: #DFE3E4;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 100%;
+  width: 75%;
+  margin-left: 13%;
 }
 
 #title-header h1 {
