@@ -11,58 +11,42 @@
   </head>
 
   <body>
-
     <div id="title-header" class="header">
       <h1>HEARTH PIZZA</h1>
       <h4>A Pacific NW take on traditional woodfired pizza</h4>
       <h5>Portland - Oregon</h5>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <div id="pizza-container" class="container">
+      <form id="pizza-form">
+          <h3>Order form:</h3>
+        <div class="col-md-6">
+          <h5 class="order-header">Choose one or more toppings ($1 each):<h5>
+          <input type="checkbox" name="pizza-toppings" value="burratta"><span class="pizza-input"> Burratta</span><br>
+          <input type="checkbox" name="pizza-toppings" value="mozzarella"><span class="pizza-input"> Mozzarella</span><br>
+          <input type="checkbox" name="pizza-toppings" value="basil"><span class="pizza-input"> Basil</span><br>
+          <input type="checkbox" name="pizza-toppings" value="sausage"><span class="pizza-input"> Sausage</span><br>
+          <input type="checkbox" name="pizza-toppings" value="kale"><span class="pizza-input"> Kale</span><br>
+          <input type="checkbox" name="pizza-toppings" value="olives"><span class="pizza-input"> Olives</span><br>
         </div>
 
-        <div id="pizza-container" class="container">
-          <form id="pizza-form">
-            <!-- <div class="col-md-12"> -->
-              <h3>Order form:</h3>
-            <!-- </div> -->
-            <div class="col-md-4">
-              <input type="checkbox" name="pizza-toppings" value="cheese"> Cheese<br>
-              <input type="checkbox" name="pizza-toppings" value="pepperoni"> Pepperoni<br>
-              <input type="checkbox" name="pizza-toppings" value="margherita"> Margherita<br>
-              <input type="checkbox" name="pizza-toppings" value="cheese"> Sausage<br>
-              <input type="checkbox" name="pizza-toppings" value="cheese"> Kale<br>
-              <input type="checkbox" name="pizza-toppings" value="cheese"> Olives<br>
-            </div>
-
-            <div class="col-md-4">
-              <select id="pizza-size" class="form-control">
-                <option value="small">Small: 10"</option>
-                <option value="medium">Medium: 12"</option>
-                <option value="large">Large: 14"</option>
-              </select>
-            </div>
-
-            <button id="pizza-submit" class="btn btn-sm btn-primary" type="submit">Place order!</button>
-          </form>
+        <div class="col-md-6">
+          <h5 class="order-header">Choose a size: </h5>
+          <select id="pizza-size" class="form-control">
+            <option value="small">Small: 10"</option>
+            <option value="medium">Medium: 12"</option>
+            <option value="large">Large: 14"</option>
+          </select>
         </div>
 
+        <button id="pizza-submit" class="btn" type="submit">Place order!</button>
+      </form>
+    </div>
 
-          <!-- <div class="col-md-4">
-            <select id="pizza-quantity" class="form-control">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-          </div> -->
+    <div class="col-md-12">
+      <div id="pizza-order">
+        <h3>Order receipt</h3>
 
-        <div class="col-md-12">
-          <div id="pizza-order">
-            <h3>Order receipt</h3>
-
-          </div>
-        </div>
       </div>
     </div>
   </body>

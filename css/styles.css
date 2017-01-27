@@ -1,6 +1,6 @@
 
 body {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/rome-street.jpg);
   font-family: 'Comfortaa', cursive;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -12,10 +12,13 @@ body {
   text-align: center;
   background-color: #A04E46;
   color: #DFE3E4;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 75%;
-  margin-left: 13%;
+  margin-top: 7%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  /*margin-left: 15%;
+  margin-right: 15%
+  margin-bottom: 3%;*/
 }
 
 #title-header h1 {
@@ -24,29 +27,47 @@ body {
 }
 
 #pizza-container {
+  width: 60%;
   background-color: #DFF8FA;
   border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-#pizza-form {
-
+  padding-top: 2%;
+  padding-bottom: 3%;
+  margin-top: 3%
 }
 
-#pizza-form h3 {
+#pizza-container h3 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
+}
+
+.order-header {
+  font-size: 16px;
+}
+
+.pizza-input {
+  font-size: 14px;
 }
 
 #pizza-submit {
   background-color: #A04E46;
+  color:#DFE3E4;
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 #pizza-order {
   border-radius: 5px;
   text-align: center;
   display: none;
-  background-color: #DFF8FA;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  background-color: #CCBEB7;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+
+
+#pizza-order p {
+  font-size: 16px;
 }
