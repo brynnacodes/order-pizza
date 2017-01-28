@@ -14,7 +14,7 @@ This webpage showcases the use of JavaScript object constructors and prototypes 
 * Open index.html in your preferred web browser
 * Select toppings, size, and input your delivery name and address
 * Place your order, and view your receipt!
-* Alternately, you may view a live gitHub pages version here:
+* Alternately, you may view a live gitHub pages version here: https://brynnacodes.github.io/order-pizza/
 
 ## Known Bugs
 
@@ -31,27 +31,27 @@ Please contact Brynna Klamkin-McCarter for support, suggestions, or other input!
 
 ## Specifications
 
-* 1. The program will allow a user to select one pizza topping
+* The program will allow a user to select one pizza topping
   * Example input: user selects cheese
   * Example output: toppings = cheese
 
-* 2. The program will allow a user to select one or more pizza toppings
+* The program will allow a user to select one or more pizza toppings
   * Example input: user selects pepperoni and spinach
   * Example output: toppings = pepperoni and spinach
 
-* 3. The program will allow a user to select a pizza size
+* The program will allow a user to select a pizza size
   * Example input: user selects medium
   * Example output: size = medium
 
-* 4. The program will calculate the cost of a user's pizza based on size and toppings
+* The program will calculate the cost of a user's pizza based on size and toppings
   * Example input: user selects toppings and size
   * Example output: price = $(x-amount)
 
-* 5. The program will will return a receipt with the cost, size, and toppings of a user's pizza
+* The program will will return a receipt with the cost, size, and toppings of a user's pizza
   * Example input: user selects toppings and size
   * Example output: program returns a receipt with the cost, size, and toppings of the user's pizza
 
-* 6. The program will allow users to input a delivery address, which will appear on their receipt
+* The program will allow users to input a delivery address, which will appear on their receipt
   * Example input: "Name: John Doe Street: ABC St."
   * Example output: Name: John Doe Street: ABC St.
 
