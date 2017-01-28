@@ -49,6 +49,5 @@ $(document).ready(function() {
     $("#pizza-container").hide();
 
     $("#pizza-order").show().append("<p class='receipt'>Size: " + size + "<br>" + "Toppings: " + toppingsString + "<br>" + "Price:" + " " + "$" + pizzaTotal + "<br>Thank you for your order!</p><br><p class='receipt'>Delivery name:" + " " + userName + "<br>" + "Delivery address: " + userStreet + " " + userCity + " " + userZip + "</p>");
-
   });
 });
