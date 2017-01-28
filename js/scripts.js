@@ -1,4 +1,4 @@
-//back-end
+/////////////////back-end//////////////////
 
 var toppings = [];
 
@@ -24,7 +24,7 @@ Pizza.prototype.pizzaPrice = function () {
   return cost;
 };
 
-//front-end
+///////////////front-end////////////////
 
 $(document).ready(function() {
   $("#pizza-form").submit(function(event) {
@@ -48,7 +48,6 @@ $(document).ready(function() {
 
     $("#pizza-container").hide();
 
-    $("#pizza-order").show().append("<p class='receipt'>Size: " + size + "<br>" + "Toppings: " + toppingsString + "<br>" + "Price:" + " " + "$" + pizzaTotal + "<br>Thank you for your order!</p><br><p class='receipt'>Delivery name:" + " " + userName + "<br>" + "Delivery address: " + userStreet + " " + userCity + " " + userZip + "</p>");
-
+    $("#pizza-order").show().append("<p class='receipt'>Size: " + size + "<br>" + "Toppings: " + toppingsString + "<br>" + "Price:" + " " + "$" + pizzaTotal + "<br></p><p class='receipt'>Delivery name:" + " " + userName + "<br>" + "Delivery address: " + userStreet + " " + userCity + " " + userZip + "<br>Thank you for your order!</p>");
   });
 });

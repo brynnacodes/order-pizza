@@ -1,64 +1,63 @@
-# _{Application Name}_
+# Hearth Pizza
 
-#### _{Brief description of application}, {Date of current version}_
+#### Intro to Programming Week 4 Independent Project, 01/27/17
 
-#### By _**{List of contributors}**_
+#### By Brynna Klamkin-McCarter
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This webpage showcases the use of JavaScript object constructors and prototypes to determine price, allow users to select toppings and a size for their pizza, and input their name and address for delivery. All of their order information is then shown (dynamically, with jQuery) on a receipt.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Clone this repository
+* Open index.html in your preferred web browser
+* Select toppings, size, and input your delivery name and address
+* Place your order, and view your receipt!
+* Alternately, you may view a live gitHub pages version here:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+No known bugs
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Please contact Brynna Klamkin-McCarter for support, suggestions, or other input!
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* CSS/Bootstrap
+* JavaScript/jQuery
 
 ## Specifications
 
-* The program will allow a user to select one pizza topping
+* 1. The program will allow a user to select one pizza topping
   * Example input: user selects cheese
   * Example output: toppings = cheese
 
-* The program will allow a user to select one or more pizza toppings
+* 2. The program will allow a user to select one or more pizza toppings
   * Example input: user selects pepperoni and spinach
   * Example output: toppings = pepperoni and spinach
 
-* The program will allow a user to select a pizza size
+* 3. The program will allow a user to select a pizza size
   * Example input: user selects medium
   * Example output: size = medium
 
-* The program will calculate the cost of a user's pizza based on size and toppings
+* 4. The program will calculate the cost of a user's pizza based on size and toppings
   * Example input: user selects toppings and size
   * Example output: price = $(x-amount)
 
-* The program will will return a receipt with the cost, size, and toppings of a user's pizza
+* 5. The program will will return a receipt with the cost, size, and toppings of a user's pizza
   * Example input: user selects toppings and size
   * Example output: program returns a receipt with the cost, size, and toppings of the user's pizza
 
-* The program will allow users to input a delivery address, which will appear on their receipt
-  * Example input:
-  * Example output:
+* 6. The program will allow users to input a delivery address, which will appear on their receipt
+  * Example input: "Name: John Doe Street: ABC St."
+  * Example output: Name: John Doe Street: ABC St.
 
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+This webpage is licensed under the MIT license.
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 201& **Brynna Klamkin-McCarter**

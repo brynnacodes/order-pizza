@@ -17,10 +17,9 @@
       <h4>A Pacific NW take on traditional woodfired pizza</h4>
       <h5>Portland - Oregon</h5>
     </div>
-
     <div id="pizza-container" class="container">
       <form id="pizza-form">
-          <h3>Order form:</h3>
+        <h3>Order form:</h3>
         <div class="col-md-6 col-lg-6">
           <h5 class="order-header">Choose one or more toppings ($1 each):<h5>
           <div class="col-md-6 col-lg-6">
@@ -46,29 +45,33 @@
 
         <div class="col-md-12 col-lg-12">
           <h3>Delivery address:</h3>
-          <div class="delivery col-md-6 col-lg-6">
-            <label for="name">Your name</label>
-            <input id="name" type="text"><br>
-            <label for="street">Street</label>
+          <div class="delivery col-md-3 col-lg-3">
+            <label for="name">Your name:</label><br>
+            <input id="name" type="text">
+          </div>
+          <div class="delivery col-md-3 col-lg-3">
+            <label for="street">Street:</label><br>
             <input id="street" type="text">
           </div>
-          <div class="delivery col-md-6 col-lg-6">
-            <label for="city">City</label>
-            <input id="city" type="text"><br>
-            <label for="zip">ZIP</label>
+          <div class="delivery col-md-3 col-lg-3">
+            <label for="city">City:</label><br>
+            <input id="city" type="text">
+          </div>
+          <div class="delivery col-md-3 col-lg-3">
+            <label for="zip">ZIP:</label><br>
             <input id="zip" type="text">
           </div>
           <div class="col-md-12 col-lg-12">
             <button id="pizza-submit" class="btn" type="submit">Place order!</button>
           </div>
         </div>
+
       </form>
     </div>
 
     <div class="col-md-12 col-lg-12">
       <div id="pizza-order">
         <h3>Order receipt</h3>
-
       </div>
     </div>
   </body>

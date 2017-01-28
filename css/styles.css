@@ -4,7 +4,6 @@ body {
   font-family: 'Comfortaa', cursive;
   background-repeat: no-repeat;
   background-size: 100vw;
-
 }
 
 #title-header {
@@ -24,7 +23,7 @@ body {
 }
 
 #pizza-container {
-  width: 60%;
+  width: 70%;
   background-color: #DFF8FA;
   border-radius: 5px;
   padding-top: 2%;
@@ -41,15 +40,12 @@ body {
   font-size: 14px;
 }
 
-.delivery {
-  padding-left: 14%;
-}
-
 #pizza-submit {
   background-color: #A04E46;
   color:#DFE3E4;
-  margin-top: 5%;
-  /*margin-left: 45%;*/
+  margin-top: 3%;
+  margin-right: 1%;
+  float: right;
 }
 
 #pizza-order {
